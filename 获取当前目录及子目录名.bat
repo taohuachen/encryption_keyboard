@@ -1,0 +1,1 @@
+dir /ad/b/s > list.txt

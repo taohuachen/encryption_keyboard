@@ -15,8 +15,10 @@
 #define __BUFFER_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "stdint.h"
+#include "lib_def.h"
 #include "stdbool.h"
+#include "stdint.h"
+#include "string.h"
 
 /* Exported types ------------------------------------------------------------*/
 /**

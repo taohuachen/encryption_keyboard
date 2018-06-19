@@ -12,7 +12,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "app.h"
-#include "keyboard.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -28,9 +27,10 @@ void KeyboardTaskFunc(void const *argument)
 
     for (;;)
     {
+        printf("KeyboardTask is running!\n");
+
         pre_key = now_key;
         now_key = Keyboard_Scan();
-
 
         if ((pre_key == KB_VALUE_NULL) && (now_key != KB_VALUE_NULL))
         {

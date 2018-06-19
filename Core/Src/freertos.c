@@ -65,6 +65,7 @@ osThreadId StartTaskHandle;
 /* Function prototypes -------------------------------------------------------*/
 void StartTaskFunc(void const * argument);
 
+extern void MX_USB_DEVICE_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* USER CODE BEGIN FunctionPrototypes */
@@ -109,6 +110,8 @@ void MX_FREERTOS_Init(void) {
 /* StartTaskFunc function */
 __weak void StartTaskFunc(void const * argument)
 {
+  /* init code for USB_DEVICE */
+  MX_USB_DEVICE_Init();
 
   /* USER CODE BEGIN StartTaskFunc */
   /* Infinite loop */

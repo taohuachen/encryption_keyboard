@@ -12,7 +12,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "app.h"
-#include "buzzer.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -25,6 +24,8 @@ void BuzzerTaskFunc(void const *argument)
 {
     for (;;)
     {
+        printf("BuzzerTask is running!\n");
+
         osSemaphoreWait(BuzzerBinarySemHandle, osWaitForever);
 
         Buzzer_On();

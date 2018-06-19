@@ -83,6 +83,9 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOE, BUZZER_Pin|LED_Pin|KB_ROW5_Pin|KB_ROW4_Pin 
                           |KB_ROW3_Pin|KB_ROW2_Pin|KB_ROW1_Pin, GPIO_PIN_RESET);
 
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(W25QXX_NSS_GPIO_Port, W25QXX_NSS_Pin, GPIO_PIN_RESET);
+
   /*Configure GPIO pins : PEPin PEPin PEPin PEPin 
                            PEPin PEPin PEPin */
   GPIO_InitStruct.Pin = BUZZER_Pin|LED_Pin|KB_ROW5_Pin|KB_ROW4_Pin 
@@ -97,6 +100,13 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PtPin */
+  GPIO_InitStruct.Pin = W25QXX_NSS_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(W25QXX_NSS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PDPin PDPin */
   GPIO_InitStruct.Pin = KB_COL2_Pin|KB_COL1_Pin;

@@ -12,14 +12,14 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "app.h"
-#include "led.h"
-#include "switch.h"
 
 /* Variables -----------------------------------------------------------------*/
+osThreadId MasterTaskHandle;
 osThreadId KeyboardTaskHandle;
 osThreadId BuzzerTaskHandle;
 
 osSemaphoreId BuzzerBinarySemHandle;
+osSemaphoreId W25qxxBinarySemHandle;
 
 osMessageQId ModeQueueHandle;
 osMessageQId AddrQueueHandle;
@@ -30,12 +30,15 @@ osMessageQId KeyQueueHandle;
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
+extern void MX_USB_DEVICE_Init(void);
+
 /* Private functions ---------------------------------------------------------*/
 /**
  * 硬件初始化
  */
 static void BspInit(void)
 {
+    MX_USB_DEVICE_Init();
 }
 
 /**
@@ -43,6 +46,9 @@ static void BspInit(void)
  */
 static void TaskCreate(void)
 {
+    osThreadDef(MasterTask, MasterTaskFunc, osPriorityNormal, 0, 128);
+    MasterTaskHandle = osThreadCreate(osThread(MasterTask), NULL);
+
     osThreadDef(KeyboardTask, KeyboardTaskFunc, osPriorityNormal, 0, 128);
     KeyboardTaskHandle = osThreadCreate(osThread(KeyboardTask), NULL);
 
@@ -57,6 +63,9 @@ static void ComunicationCreate(void)
 {
     osSemaphoreDef(BuzzerBinarySem);
     BuzzerBinarySemHandle = osSemaphoreCreate(osSemaphore(BuzzerBinarySem), 1);
+
+    osSemaphoreDef(W25qxxBinarySem);
+    W25qxxBinarySemHandle = osSemaphoreCreate(osSemaphore(W25qxxBinarySem), 1);
 
     osMessageQDef(ModeQueue, 1, uint8_t);
     ModeQueueHandle = osMessageCreate(osMessageQ(ModeQueue), NULL);
@@ -74,14 +83,17 @@ void StartTaskFunc(void const *argument)
     BspInit();            //硬件初始化
     TaskCreate();         //创建任务
     ComunicationCreate(); //创建通信工具
+//    W25qxx_EraseChip();
 
     for (;;)
     {
-//        uint8_t mode = ModeRead();
-//        uint8_t addr = AddrRead();
-//
-//        osMessagePut(ModeQueueHandle, mode, osWaitForever);
-//        osMessagePut(AddrQueueHandle, addr, osWaitForever);
+        printf("StartTask is running!\n");
+
+        uint8_t mode = ModeRead();
+        uint8_t addr = AddrRead();
+
+        osMessagePut(ModeQueueHandle, mode, osWaitForever);
+        osMessagePut(AddrQueueHandle, addr, osWaitForever);
 
         LED_Toggle();
         osDelay(500);

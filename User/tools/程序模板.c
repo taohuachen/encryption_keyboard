@@ -11,7 +11,7 @@
  */
 
 /* Includes ------------------------------------------------------------------*/
-#include "app.h"
+#include ""
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -20,16 +20,3 @@
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 /* Public functions ----------------------------------------------------------*/
-void BuzzerTaskFunc(void const *argument)
-{
-    for (;;)
-    {
-        printf("BuzzerTask is running!\n");
-
-        osSemaphoreWait(BuzzerBinarySemHandle, osWaitForever);
-
-        Buzzer_On();
-        osDelay(100);
-        Buzzer_Off();
-    }
-}

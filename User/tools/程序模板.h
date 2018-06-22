@@ -11,27 +11,11 @@
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __APP_H
-#define __APP_H
+#ifndef __ _H
+#define __ _H
 
 /* Includes ------------------------------------------------------------------*/
-#include "cmsis_os.h"
-#include "led.h"
-#include "switch.h"
-#include "keyboard.h"
-#include "buzzer.h"
-#include "spi_flash_w25qxx.h"
-#include "ks0108.h"
-
-/* Variables -----------------------------------------------------------------*/
-extern void StartTaskFunc(void const *argument);
-extern void MasterTaskFunc(void const *argument);
-extern void KeyboardTaskFunc(void const *argument);
-extern void DisplayTaskFunc(void const *argument);
-
-extern osMessageQId ModeQueueHandle;
-extern osMessageQId AddrQueueHandle;
-extern osMessageQId KeyQueueHandle;
+#include ""
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/

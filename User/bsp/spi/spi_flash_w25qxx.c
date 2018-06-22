@@ -83,12 +83,13 @@
 #define CMD_RELEASE_POWERDOWN (0xAB) /* 释放掉电 */
 #define CMD_POWERDOWN (0xB9)         /* 掉电 */
 
+/* W25qxx_CS config */
+#define W25qxx_CS_Enable IO_WritePin(&w25qxx_cs, 0)
+#define W25qxx_CS_Disable IO_WritePin(&w25qxx_cs, 1)
+
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 IO_TypeDef w25qxx_cs = {W25qxx_CS_GPIO_Port, W25qxx_CS_Pin};
-
-#define W25qxx_CS_Enable IO_WritePin(&w25qxx_cs, 0)
-#define W25qxx_CS_Disable IO_WritePin(&w25qxx_cs, 1)
 
 #if W25QXX_MODE_NON_BLOCKING
 enum

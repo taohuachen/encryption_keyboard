@@ -11,32 +11,33 @@
  */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __APP_H
-#define __APP_H
+#ifndef __KS0108_H
+#define __KS0108_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "cmsis_os.h"
-#include "led.h"
-#include "switch.h"
-#include "keyboard.h"
-#include "buzzer.h"
-#include "spi_flash_w25qxx.h"
-#include "ks0108.h"
-
-/* Variables -----------------------------------------------------------------*/
-extern void StartTaskFunc(void const *argument);
-extern void MasterTaskFunc(void const *argument);
-extern void KeyboardTaskFunc(void const *argument);
-extern void DisplayTaskFunc(void const *argument);
-
-extern osMessageQId ModeQueueHandle;
-extern osMessageQId AddrQueueHandle;
-extern osMessageQId KeyQueueHandle;
+#include "io.h"
+#include "delay.h"
+#include "lib_def.h"
+#include "main.h"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
+void LCD_Init(void);
+void LCD_Reset(void);
+void LCD_WriteCmd(uint8_t cmd);
+void LCD_WriteData(uint8_t data);
+void LCD_DispOn(void);
+void LCD_DispOff(void);
+void LCD_SetXY(uint8_t x, uint8_t y);
+void LCD_WriteByte(uint8_t x, uint8_t y, uint8_t byte);
+void LCD_Clear(void);
+void LCD_SetBrightness(uint8_t ratio);
+
+void LCD_SetPixel(int x, int y, int PixelIndex);
+unsigned int LCD_GetPixel(int x, int y);
+void LCD_Display(void);
 
 /* End of define module include ----------------------------------------------*/
 #endif

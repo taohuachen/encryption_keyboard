@@ -20,25 +20,35 @@
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 /* Public functions ----------------------------------------------------------*/
-void KeyboardTaskFunc(void const *argument)
+void DisplayTaskFunc(void const *argument)
 {
-    uint8_t pre_key = KB_VALUE_NULL;
-    uint8_t now_key = KB_VALUE_NULL;
+    LCD_Init();
+    LCD_SetBrightness(100);
+
+    uint8_t i = 0;
+    uint8_t j = 0;
 
     for (;;)
     {
-        printf("KeyboardTask is running!\n");
+        printf("DisplayTask is running!\n");
 
-        Buzzer_Off();
-
-        pre_key = now_key;
-        now_key = Keyboard_Scan();
-
-        if ((pre_key == KB_VALUE_NULL) && (now_key != KB_VALUE_NULL))
+        LCD_SetPixel(i, j, 1);
+        if (i < 128)
         {
-            osMessagePut(KeyQueueHandle, now_key, osWaitForever);
-            Buzzer_On();
+            i++;
         }
+        if ((i == 128) && (j < 64))
+        {
+            i = 0;
+            j++;
+        }
+        if ((i == 128) && (j == 64))
+        {
+            i = 0;
+            j = 0;
+        }
+
+        LCD_Display();
 
         osDelay(50);
     }

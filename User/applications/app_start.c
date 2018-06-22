@@ -16,10 +16,7 @@
 /* Variables -----------------------------------------------------------------*/
 osThreadId MasterTaskHandle;
 osThreadId KeyboardTaskHandle;
-osThreadId BuzzerTaskHandle;
-
-osSemaphoreId BuzzerBinarySemHandle;
-osSemaphoreId W25qxxBinarySemHandle;
+osThreadId DisplayTaskHandle;
 
 osMessageQId ModeQueueHandle;
 osMessageQId AddrQueueHandle;
@@ -52,8 +49,8 @@ static void TaskCreate(void)
     osThreadDef(KeyboardTask, KeyboardTaskFunc, osPriorityNormal, 0, 128);
     KeyboardTaskHandle = osThreadCreate(osThread(KeyboardTask), NULL);
 
-    osThreadDef(BuzzerTask, BuzzerTaskFunc, osPriorityNormal, 0, 128);
-    BuzzerTaskHandle = osThreadCreate(osThread(BuzzerTask), NULL);
+    osThreadDef(DisplayTask, DisplayTaskFunc, osPriorityNormal, 0, 128);
+    DisplayTaskHandle = osThreadCreate(osThread(DisplayTask), NULL);
 }
 
 /**
@@ -61,12 +58,6 @@ static void TaskCreate(void)
  */
 static void ComunicationCreate(void)
 {
-    osSemaphoreDef(BuzzerBinarySem);
-    BuzzerBinarySemHandle = osSemaphoreCreate(osSemaphore(BuzzerBinarySem), 1);
-
-    osSemaphoreDef(W25qxxBinarySem);
-    W25qxxBinarySemHandle = osSemaphoreCreate(osSemaphore(W25qxxBinarySem), 1);
-
     osMessageQDef(ModeQueue, 1, uint8_t);
     ModeQueueHandle = osMessageCreate(osMessageQ(ModeQueue), NULL);
 
@@ -83,7 +74,6 @@ void StartTaskFunc(void const *argument)
     BspInit();            //硬件初始化
     TaskCreate();         //创建任务
     ComunicationCreate(); //创建通信工具
-//    W25qxx_EraseChip();
 
     for (;;)
     {
@@ -96,6 +86,7 @@ void StartTaskFunc(void const *argument)
         osMessagePut(AddrQueueHandle, addr, osWaitForever);
 
         LED_Toggle();
+
         osDelay(500);
     }
 }

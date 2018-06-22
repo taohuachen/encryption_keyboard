@@ -31,7 +31,6 @@
 
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions --------------------------------------------------------*/
-/* Public functions ----------------------------------------------------------*/
 void W25qxx_WriteEnable(void);
 void W25qxx_WriteDisable(void);
 uint8_t W25qxx_ReadSR1(void);

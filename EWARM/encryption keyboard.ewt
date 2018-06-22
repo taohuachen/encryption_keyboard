@@ -1337,7 +1337,7 @@
     <group>
       <name>applications</name>
       <file>
-        <name>$PROJ_DIR$\..\User\applications\app_buzzer.c</name>
+        <name>$PROJ_DIR$\..\User\applications\app_display.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\User\applications\app_keyboard.c</name>
@@ -1364,6 +1364,9 @@
         <name>$PROJ_DIR$\..\User\bsp\keyboard\keyboard.c</name>
       </file>
       <file>
+        <name>$PROJ_DIR$\..\User\bsp\lcd\lcd12864\ks0108.c</name>
+      </file>
+      <file>
         <name>$PROJ_DIR$\..\User\bsp\led\led.c</name>
       </file>
       <file>
@@ -1378,6 +1381,9 @@
     </group>
     <group>
       <name>components</name>
+      <group>
+        <name>STemWin</name>
+      </group>
     </group>
   </group>
 </project>

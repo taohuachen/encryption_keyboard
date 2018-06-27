@@ -24,28 +24,19 @@ void DisplayTaskFunc(void const *argument)
 {
     LCD_Init();
     LCD_SetBrightness(100);
+    GUI_Init();
 
-    uint8_t i = 0;
-    uint8_t j = 0;
+    int i = 0;
+    GUI_DispString("Hello world!");
 
     for (;;)
     {
         printf("DisplayTask is running!\n");
 
-        LCD_SetPixel(i, j, 1);
-        if (i < 128)
-        {
-            i++;
-        }
-        if ((i == 128) && (j < 64))
+        GUI_DispDecAt(i++, 20, 20, 4);
+        if (i > 9999)
         {
             i = 0;
-            j++;
-        }
-        if ((i == 128) && (j == 64))
-        {
-            i = 0;
-            j = 0;
         }
 
         LCD_Display();

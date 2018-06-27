@@ -1,3 +1,7 @@
 {
-    "C_Cpp.dimInactiveRegions": false
+    "C_Cpp.dimInactiveRegions": false,
+    "files.associations": {
+        "guidrv_flexcolor.h": "c",
+        "gui.h": "c"
+    }
 }

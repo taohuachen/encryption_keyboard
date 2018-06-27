@@ -28,6 +28,7 @@ osMessageQId KeyQueueHandle;
 /* Private variables ---------------------------------------------------------*/
 /* Private function prototypes -----------------------------------------------*/
 extern void MX_USB_DEVICE_Init(void);
+extern void MX_FATFS_Init(void);
 
 /* Private functions ---------------------------------------------------------*/
 /**
@@ -36,6 +37,7 @@ extern void MX_USB_DEVICE_Init(void);
 static void BspInit(void)
 {
     MX_USB_DEVICE_Init();
+    MX_FATFS_Init();
 }
 
 /**

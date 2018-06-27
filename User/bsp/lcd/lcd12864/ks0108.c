@@ -198,7 +198,7 @@ void LCD_SetBrightness(uint8_t ratio)
     }
 }
 
-void LCD_SetPixel(int x, int y, int PixelIndex)
+void LCD_SetPixel(uint8_t x, uint8_t y, uint8_t PixelIndex)
 {
     uint8_t byte;
     uint8_t pos;
@@ -211,7 +211,7 @@ void LCD_SetPixel(int x, int y, int PixelIndex)
     video_memory[y / 8][x] = byte;
 }
 
-unsigned int LCD_GetPixel(int x, int y)
+uint8_t LCD_GetPixel(uint8_t x, uint8_t y)
 {
     uint8_t byte;
     uint8_t pos;

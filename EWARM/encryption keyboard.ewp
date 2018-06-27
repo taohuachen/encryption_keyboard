@@ -320,6 +320,7 @@
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Core</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Drivers</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\EWARM</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\FATFS</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\USB_DEVICE</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\User</state>
@@ -358,6 +359,7 @@
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\20</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\21</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\22</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\23</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\26</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\27</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\29</state>
@@ -380,19 +382,24 @@
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\42</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\44</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\46</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\47</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\49</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\4d</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\4e</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\4f</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\51</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\54</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\55</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\56</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\59</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\5a</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\5b</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\5c</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\5d</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\5e</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\5f</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\60</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\61</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\62</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\64</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\65</state>
@@ -414,6 +421,7 @@
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\79</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\7a</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\7c</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\7d</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\7f</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\80</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\83</state>
@@ -433,6 +441,7 @@
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\92</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\93</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\94</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\95</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\96</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\97</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\98</state>
@@ -443,6 +452,7 @@
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\9f</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\a0</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\a1</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\a2</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\a3</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\a4</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\a5</state>
@@ -499,6 +509,7 @@
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\eb</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\ed</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\ef</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\f0</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\f1</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\f2</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\.git\objects\f3</state>
@@ -546,7 +557,10 @@
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\ST\STM32_USB_Device_Library\Class\MSC\Src</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\ST\STM32_USB_Device_Library\Core\Inc</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\ST\STM32_USB_Device_Library\Core\Src</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\Third_Party\FatFs</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\Third_Party\FreeRTOS</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\Third_Party\FatFs\src</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\Third_Party\FatFs\src\option</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\Third_Party\FreeRTOS\Source</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\Middlewares\Third_Party\FreeRTOS\Source\include</state>
@@ -568,9 +582,10 @@
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\bsp\lib</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\bsp\spi</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\bsp\switch</state>
-          <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\bsp\usb</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\bsp\lcd\lcd12864</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\components\FatFs</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\components\STemWin</state>
+          <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\components\USB</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\components\STemWin\Config</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\components\STemWin\Documentation</state>
           <state>C:\Users\Administrator\Desktop\encryption_keyboard\User\components\STemWin\inc</state>
@@ -1240,6 +1255,18 @@
     <group>
       <name>User</name>
       <group>
+        <name>FatFs</name>
+        <file>
+          <name>$PROJ_DIR$\..\FATFS\fatfs.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\FATFS\user_diskio.c</name>
+          <excluded>
+            <configuration>encryption keyboard</configuration>
+          </excluded>
+        </file>
+      </group>
+      <group>
         <name>USB_Device_Library</name>
         <file>
           <name>$PROJ_DIR$\..\USB_DEVICE\usb_device.c</name>
@@ -1257,6 +1284,9 @@
           </excluded>
         </file>
       </group>
+      <file>
+        <name>$PROJ_DIR$\..\Core\Src\crc.c</name>
+      </file>
       <file>
         <name>$PROJ_DIR$\..\Core\Src\dma.c</name>
       </file>
@@ -1298,6 +1328,9 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_crc.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c</name>
@@ -1348,6 +1381,21 @@
   </group>
   <group>
     <name>Middlewares</name>
+    <group>
+      <name>FatFs</name>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\diskio.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\ff.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\option\syscall.c</name>
+      </file>
+    </group>
     <group>
       <name>FreeRTOS</name>
       <file>
@@ -1449,14 +1497,47 @@
       <file>
         <name>$PROJ_DIR$\..\User\bsp\switch\switch.c</name>
       </file>
-      <file>
-        <name>$PROJ_DIR$\..\User\bsp\usb\usbd_storage_if.c</name>
-      </file>
     </group>
     <group>
       <name>components</name>
       <group>
+        <name>FatFs</name>
+        <file>
+          <name>$PROJ_DIR$\..\User\components\FatFs\user_diskio.c</name>
+        </file>
+      </group>
+      <group>
         <name>STemWin</name>
+        <group>
+          <name>Config</name>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\Config\GUIConf.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\Config\GUIDRV.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\Config\LCDConf.c</name>
+          </file>
+        </group>
+        <group>
+          <name>Lib</name>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\Lib\STemWin532_CM3_OS_IAR.a</name>
+          </file>
+        </group>
+        <group>
+          <name>OS</name>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\OS\GUI_X_OS.c</name>
+          </file>
+        </group>
+      </group>
+      <group>
+        <name>USB</name>
+        <file>
+          <name>$PROJ_DIR$\..\User\components\USB\usbd_storage_if.c</name>
+        </file>
       </group>
     </group>
   </group>

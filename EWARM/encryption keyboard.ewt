@@ -1169,6 +1169,15 @@
     <group>
       <name>User</name>
       <group>
+        <name>FatFs</name>
+        <file>
+          <name>$PROJ_DIR$\..\FATFS\fatfs.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\FATFS\user_diskio.c</name>
+        </file>
+      </group>
+      <group>
         <name>USB_Device_Library</name>
         <file>
           <name>$PROJ_DIR$\..\USB_DEVICE\usb_device.c</name>
@@ -1183,6 +1192,9 @@
           <name>$PROJ_DIR$\..\USB_DEVICE\usbd_storage_if.c</name>
         </file>
       </group>
+      <file>
+        <name>$PROJ_DIR$\..\Core\Src\crc.c</name>
+      </file>
       <file>
         <name>$PROJ_DIR$\..\Core\Src\dma.c</name>
       </file>
@@ -1224,6 +1236,9 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_crc.c</name>
       </file>
       <file>
         <name>$PROJ_DIR$\..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c</name>
@@ -1274,6 +1289,21 @@
   </group>
   <group>
     <name>Middlewares</name>
+    <group>
+      <name>FatFs</name>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\diskio.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\ff.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\ff_gen_drv.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\FatFs\src\option\syscall.c</name>
+      </file>
+    </group>
     <group>
       <name>FreeRTOS</name>
       <file>
@@ -1375,14 +1405,47 @@
       <file>
         <name>$PROJ_DIR$\..\User\bsp\switch\switch.c</name>
       </file>
-      <file>
-        <name>$PROJ_DIR$\..\User\bsp\usb\usbd_storage_if.c</name>
-      </file>
     </group>
     <group>
       <name>components</name>
       <group>
+        <name>FatFs</name>
+        <file>
+          <name>$PROJ_DIR$\..\User\components\FatFs\user_diskio.c</name>
+        </file>
+      </group>
+      <group>
         <name>STemWin</name>
+        <group>
+          <name>Config</name>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\Config\GUIConf.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\Config\GUIDRV.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\Config\LCDConf.c</name>
+          </file>
+        </group>
+        <group>
+          <name>Lib</name>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\Lib\STemWin532_CM3_OS_IAR.a</name>
+          </file>
+        </group>
+        <group>
+          <name>OS</name>
+          <file>
+            <name>$PROJ_DIR$\..\User\components\STemWin\OS\GUI_X_OS.c</name>
+          </file>
+        </group>
+      </group>
+      <group>
+        <name>USB</name>
+        <file>
+          <name>$PROJ_DIR$\..\User\components\USB\usbd_storage_if.c</name>
+        </file>
       </group>
     </group>
   </group>

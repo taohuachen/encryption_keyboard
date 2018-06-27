@@ -35,8 +35,8 @@ void LCD_WriteByte(uint8_t x, uint8_t y, uint8_t byte);
 void LCD_Clear(void);
 void LCD_SetBrightness(uint8_t ratio);
 
-void LCD_SetPixel(int x, int y, int PixelIndex);
-unsigned int LCD_GetPixel(int x, int y);
+void LCD_SetPixel(uint8_t x, uint8_t y, uint8_t PixelIndex);
+uint8_t LCD_GetPixel(uint8_t x, uint8_t y);
 void LCD_Display(void);
 
 /* End of define module include ----------------------------------------------*/

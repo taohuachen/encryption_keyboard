@@ -22,6 +22,8 @@
 #include "buzzer.h"
 #include "spi_flash_w25qxx.h"
 #include "ks0108.h"
+#include "GUI.h"
+#include "fatfs.h"
 
 /* Variables -----------------------------------------------------------------*/
 extern void StartTaskFunc(void const *argument);
